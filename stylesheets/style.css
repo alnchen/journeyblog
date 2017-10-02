@@ -1,0 +1,60 @@
+/*
+whitewithsomedark: #e2e2e2
+whitewash: #ebeced
+frenchblue: #a2aab0
+denim: #4c586f
+cashmere: #cbc5c1
+gunmetal: #3e3e3b
+grayishblue: #9aabb9;
+*/
+
+body {
+  background-color: #e2e2e2;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 33px;
+  background-color: #4c586f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 33px;
+  width: auto;
+}
+
+.navbar-section {
+  width: 30vw;
+  padding: 0 10px;
+  /*background-color: black;*/
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title * {
+  padding: 0 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links * {
+  padding-left: 0.8vw;
+}
