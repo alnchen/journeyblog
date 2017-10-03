@@ -6,6 +6,7 @@ denim: #4c586f
 cashmere: #cbc5c1
 gunmetal: #3e3e3b
 grayishblue: #9aabb9;
+headerblue: #404751
 */
 
 body {
@@ -16,8 +17,8 @@ body {
   position: fixed;
   top: 0px;
   width: 100vw;
-  height: 33px;
-  background-color: #4c586f;
+  height: 40px;
+  background-color: #404751;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -25,7 +26,7 @@ body {
 }
 
 .logo {
-  height: 33px;
+  height: 30px;
   width: auto;
 }
 
@@ -47,7 +48,7 @@ body {
 }
 
 .title * {
-  padding: 0 5px;
+  padding: 0 1px;
 }
 
 .links {
@@ -56,5 +57,31 @@ body {
 }
 
 .links * {
-  padding-left: 0.8vw;
+  transition: all .1s ease-in-out;
+  padding: 0 0.4vw;
+}
+
+.links *:hover {
+  transform: scale(1.2);
+}
+
+.mainbody {
+  margin-top: 40px;
+}
+
+.link {
+  width: 15vw;
+  /*height: 20px;*/
+  padding: 5px 2vw;
+  border: 1px black solid;
+}
+
+.section {
+  position: fixed;
+  left: 0;
+}
+
+.post {
+  margin-left: 19vw;
+  padding: 10px;
 }
