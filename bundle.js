@@ -22566,6 +22566,7 @@ var App = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'mainbody' },
+            _react2.default.createElement(_reactRouterDom.Redirect, { to: '/' }),
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/intro', render: introComp })
           )
         )
@@ -22619,10 +22620,24 @@ var Navbar = function (_React$Component) {
   function Navbar() {
     _classCallCheck(this, Navbar);
 
-    return _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
   }
 
   _createClass(Navbar, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      var allLinks = document.getElementsByClassName("link");
+
+      for (var i = 0; i < allLinks.length; i++) {
+        allLinks[i].style.backgroundColor = "#f2f2f2";
+        allLinks[i].style.borderColor = "black";
+        allLinks[i].removeEventListener('click', this.handleOutsideClick, false);
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -22634,7 +22649,11 @@ var Navbar = function (_React$Component) {
           _react2.default.createElement(
             _reactRouterDom.Link,
             { to: '/' },
-            'Allen Chen'
+            _react2.default.createElement(
+              'div',
+              { onClick: this.handleClick },
+              'Allen Chen'
+            )
           )
         ),
         _react2.default.createElement(
@@ -25896,8 +25915,6 @@ var LinkItem = function (_React$Component) {
   _createClass(LinkItem, [{
     key: 'handleClick',
     value: function handleClick(e) {
-      // e.preventDefault();
-
       var allLinks = document.getElementsByClassName("link");
 
       for (var i = 0; i < allLinks.length; i++) {
@@ -25913,8 +25930,6 @@ var LinkItem = function (_React$Component) {
   }, {
     key: 'handleOutsideClick',
     value: function handleOutsideClick(e) {
-      // e.preventDefault();
-
       if (e.target === this) {
         return;
       }
@@ -25980,7 +25995,11 @@ var Post = function (_React$Component) {
       return _react2.default.createElement(
         "div",
         { className: "post" },
-        this.props.content
+        _react2.default.createElement(
+          "div",
+          { className: "text" },
+          this.props.content
+        )
       );
     }
   }]);

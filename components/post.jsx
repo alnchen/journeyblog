@@ -10,7 +10,7 @@ class Post extends React.Component {
       console.log(this.props);
       return (
         <div className="post">
-          {this.props.content}
+          <div className="text">{this.props.content}</div>
         </div>
       );
     }

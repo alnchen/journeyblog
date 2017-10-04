@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import Section from './section';
 import Post from './post';
-import { Route, HashRouter, Link } from 'react-router-dom';
+import { Route, HashRouter, Link, Redirect } from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -18,6 +18,7 @@ class App extends React.Component {
             <Navbar />
             <Section />
             <div className='mainbody'>
+              <Redirect to="/"/>
               <Route exact path="/intro" render={introComp} />
             </div>
         </div>

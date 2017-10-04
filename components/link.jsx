@@ -12,8 +12,6 @@ class LinkItem extends React.Component {
     }
 
     handleClick(e) {
-      // e.preventDefault();
-
       var allLinks = document.getElementsByClassName("link");
 
       for (var i = 0; i < allLinks.length; i++) {
@@ -28,8 +26,6 @@ class LinkItem extends React.Component {
     }
 
     handleOutsideClick(e) {
-      // e.preventDefault();
-
       if (e.target === this) {
         return;
       }

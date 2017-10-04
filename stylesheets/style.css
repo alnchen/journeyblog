@@ -39,12 +39,14 @@ body {
 .name {
   display: flex;
   justify-content: flex-start;
+  /*font-size: 16px;*/
 }
 
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*font-size: 20px;*/
 }
 
 .title * {
@@ -58,7 +60,7 @@ body {
 
 .links * {
   transition: all .1s ease-in-out;
-  padding: 0 0.4vw;
+  padding: 0 0.3vw;
 }
 
 .links *:hover {
@@ -70,11 +72,16 @@ body {
 }
 
 .link {
-  width: 15vw;
-  /*height: 20px;*/
-  padding: 5px 2vw;
+  width: 18vw;
+  height: calc((100vh - 56px)/8);
+  /*padding: 5px 2vw;*/
   border: 1px black solid;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vw;
+
 }
 
 .section {
@@ -85,4 +92,12 @@ body {
 .post {
   margin-left: 19vw;
   padding: 10px;
+  /*background-color: white;*/
+}
+
+.text {
+  margin: 3vw;
+  background-color: white;
+  padding: 20px;
+  font-size: 16px;
 }
