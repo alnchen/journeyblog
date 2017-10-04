@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from './link';
+import LinkItem from './link';
+import { Link } from 'react-router-dom';
 
 class Section extends React.Component {
     constructor() {
@@ -9,16 +10,25 @@ class Section extends React.Component {
 
     render() {
       var sections = [
-        'one',
-        'two',
-        'three',
-        'four',
-        'five'
+        'Intro',
+        'Choosing a Bootcamp',
+        'The Course',
+        'Final Projects',
+        'Tips and Pointers',
+        'Job Search',
+        'Overall Experience',
+        'Photos and Videos'
       ];
 
-      const links = sections.map( (link, idx) => (
-        <Link key={idx} title={link} />
-      ));
+      const links = sections.map( (link, idx) => {
+        const path = link.toLowerCase().replace(/ /g,'');
+
+        return (
+          <Link to={path}>
+            <LinkItem key={idx} title={link} path={path} />
+          </Link>
+        );
+      });
 
       return (
         <div className="section">

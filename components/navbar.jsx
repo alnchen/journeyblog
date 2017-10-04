@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends React.Component {
     constructor() {
@@ -9,7 +10,9 @@ class Navbar extends React.Component {
     render() {
       return (
         <div className="navbar">
-          <div className='navbar-section name'>Allen Chen</div>
+          <div className='navbar-section name'>
+            <Link to='/'>Allen Chen</Link>
+          </div>
           <div className='navbar-section title'>my<a href="https://www.appacademy.io/" target="_blank"><img className='logo' src='https://res.cloudinary.com/ac31624/image/upload/v1506937412/appacademy_logo_dyvlw0.png' /></a>journey</div>
           <div className='navbar-section links'>
             <a href="http://allenchen.io/" target="_blank"><i className="fa fa-id-badge" aria-hidden="true"></i></a>

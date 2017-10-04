@@ -22562,12 +22562,12 @@ var App = function (_React$Component) {
           'div',
           null,
           _react2.default.createElement(_navbar2.default, null),
+          _react2.default.createElement(_section2.default, null),
           _react2.default.createElement(
             'div',
             { className: 'mainbody' },
-            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _section2.default })
-          ),
-          _react2.default.createElement(_post2.default, null)
+            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/intro', render: introComp })
+          )
         )
       );
     }
@@ -22577,6 +22577,14 @@ var App = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = App;
+
+// content
+
+var intro = 'I first heard about these coding bootcamps about two years ago. And quite frankly, I didn\u2019t think much of them as they sounded \u201Ctoo good to be true\u201D. The idea that in a matter of weeks, this program can turn virtually anybody, regardless of background and knowledge, into a solid developer making $100k+ sounded like a scam that is marketed all too well. I was in doubt and, on top of that, I was satisfied with what I was doing over at Facebook on the Search Team (special shoutout to all my day1 homies at mpk14) so I brushed it off and carried on.\n\nBut as time went on, I started hearing much more about these bootcamps and the \u201Creal-world success stories\u201D by students, especially in the San Francisco Bay Area. It had become such a fad to the point where it seemed like new bootcamps were being formed on a monthly basis. What really struck me was finding out that a great buddy of mine, Raymond Zhang, had completed a bootcamp called App Academy and was in the process of job hunting for software engineering positions (s/o to RayZ). And so I became curious. Very curious. But the bigger question I had was still: is it worth it?\n\nLong story short, this question would ultimately be answered by some unfortunate work circumstances. And if I were to ever take a big risk, this would be the time. So with that, I started reaching out to my buddies, especially Raymond in particular, to pick their brains a little bit and gather insight on their experiences and ideas. I also resorted to Google (of course) and Reddit (lol) to do some further research on the many bootcamps available. At this point in time, I was determined that enrolling in a coding bootcamp is what I wanted to do.\n';
+
+var introComp = function introComp(props) {
+  return _react2.default.createElement(_post2.default, { content: intro });
+};
 
 /***/ }),
 /* 51 */
@@ -22594,6 +22602,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(52);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22621,7 +22631,11 @@ var Navbar = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'navbar-section name' },
-          'Allen Chen'
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/' },
+            'Allen Chen'
+          )
         ),
         _react2.default.createElement(
           'div',
@@ -25789,6 +25803,8 @@ var _link = __webpack_require__(81);
 
 var _link2 = _interopRequireDefault(_link);
 
+var _reactRouterDom = __webpack_require__(52);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25809,10 +25825,16 @@ var Section = function (_React$Component) {
   _createClass(Section, [{
     key: 'render',
     value: function render() {
-      var sections = ['one', 'two', 'three', 'four', 'five'];
+      var sections = ['Intro', 'Choosing a Bootcamp', 'The Course', 'Final Projects', 'Tips and Pointers', 'Job Search', 'Overall Experience', 'Photos and Videos'];
 
       var links = sections.map(function (link, idx) {
-        return _react2.default.createElement(_link2.default, { key: idx, title: link });
+        var path = link.toLowerCase().replace(/ /g, '');
+
+        return _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: path },
+          _react2.default.createElement(_link2.default, { key: idx, title: link, path: path })
+        );
       });
 
       return _react2.default.createElement(
@@ -25845,6 +25867,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(52);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25853,30 +25877,67 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Link = function (_React$Component) {
-  _inherits(Link, _React$Component);
+var LinkItem = function (_React$Component) {
+  _inherits(LinkItem, _React$Component);
 
-  function Link(props) {
-    _classCallCheck(this, Link);
+  function LinkItem(props) {
+    _classCallCheck(this, LinkItem);
 
-    return _possibleConstructorReturn(this, (Link.__proto__ || Object.getPrototypeOf(Link)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (LinkItem.__proto__ || Object.getPrototypeOf(LinkItem)).call(this, props));
+
+    _this.state = {
+      clicked: false
+    };
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleOutsideClick = _this.handleOutsideClick.bind(_this);
+    return _this;
   }
 
-  _createClass(Link, [{
-    key: "render",
+  _createClass(LinkItem, [{
+    key: 'handleClick',
+    value: function handleClick(e) {
+      // e.preventDefault();
+
+      var allLinks = document.getElementsByClassName("link");
+
+      for (var i = 0; i < allLinks.length; i++) {
+        if (!this.state.clicked) {
+          allLinks[i].addEventListener('click', this.handleOutsideClick, false);
+        } else {
+          allLinks[i].removeEventListener('click', this.handleOutsideClick, false);
+        }
+      }
+
+      this.setState({ clicked: !this.state.clicked });
+    }
+  }, {
+    key: 'handleOutsideClick',
+    value: function handleOutsideClick(e) {
+      // e.preventDefault();
+
+      if (e.target === this) {
+        return;
+      }
+
+      this.handleClick();
+    }
+  }, {
+    key: 'render',
     value: function render() {
+      var bgColor = this.state.clicked ? '#dbdbdb' : '#f2f2f2',
+          borderColor = this.state.clicked ? '#dbdbdb' : "black";
       return _react2.default.createElement(
-        "div",
-        { className: "link" },
+        'div',
+        { className: 'link', style: { backgroundColor: bgColor, borderColor: borderColor }, onClick: this.handleClick },
         this.props.title
       );
     }
   }]);
 
-  return Link;
+  return LinkItem;
 }(_react2.default.Component);
 
-exports.default = Link;
+exports.default = LinkItem;
 
 /***/ }),
 /* 82 */
@@ -25913,15 +25974,13 @@ var Post = function (_React$Component) {
   }
 
   _createClass(Post, [{
-    key: 'render',
+    key: "render",
     value: function render() {
-
-      var body = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit animid est laborum.';
-
+      console.log(this.props);
       return _react2.default.createElement(
-        'div',
-        { className: 'post' },
-        body
+        "div",
+        { className: "post" },
+        this.props.content
       );
     }
   }]);
@@ -25930,9 +25989,6 @@ var Post = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Post;
-
-
-_react2.default.createElement('img', { src: 'http://www.slamonline.com/wp-content/uploads/2017/09/chrispaultag.jpg' });
 
 /***/ })
 /******/ ]);
