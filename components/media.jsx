@@ -9,6 +9,7 @@ class Media extends React.Component {
     render() {
       return (
         <div className="media">
+          <div className='media-title'></div>
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180795/blog/1_-_jumpstart.jpg' />
           <div className='caption'>Jumpstart Day 1</div>
 
@@ -64,7 +65,7 @@ class Media extends React.Component {
           <div className='caption'>Lunchtime Views</div>
 
           <img className='photo vertical' src='https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180826/blog/14_-_sushi.jpg' />
-          <div className='caption'>When You Find Out SF Charges $8 for 4 Pieces of California Roll</div>
+          <div className='caption'>When A Chicago Native Finds Out SF Charges $8 for 4 Pieces of California Roll</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180867/blog/16_-_pool.png' />
           <div className='caption'>Taking A Friday Night Off</div>
@@ -142,7 +143,7 @@ class Media extends React.Component {
           <div className='caption'>One More Meal Before Some Homies Move Back Home (S/O To GluteSquad)</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180865/blog/19_-_support_system.jpg' />
-          <div className='caption'>Definitely The Best Support System I Have.</div>
+          <div className='caption'>The Best Support System</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507196817/stats_wi1cbm.png' />
           <div className='caption'>458 Applications. Not A Typo</div>
