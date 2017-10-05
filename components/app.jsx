@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './navbar';
 import Section from './section';
 import Post from './post';
+import Media from './media';
 import { Route, HashRouter, Link, Redirect } from 'react-router-dom';
-
 
 class App extends React.Component {
     constructor() {
@@ -21,6 +21,7 @@ class App extends React.Component {
               <Redirect to="/"/>
               <Route exact path="/intro" render={introComp} />
               <Route exact path="/choosingabootcamp" render={choosingComp} />
+              <Route exact path="/photosandvideos" component={Media} />
             </div>
         </div>
         </HashRouter>
@@ -47,8 +48,7 @@ const intro = `	I first heard about these coding bootcamps about two years ago. 
 const introComp = (props) => <Post content={intro} />;
 
 
-const choosing = `Choosing a Bootcamp
-	The Bay Area, being the tech hub that it has become, is filled with web development bootcamps. App Academy, HackReactor, General Assembly, Dev Bootcamp, and even UC Berkeley had coding programs to offer! What are the pros and cons of each, tuition costs, tech stack offered, student reviews, program duration, acceptance rate, job placement rate…there were just so many factors to consider. I'm gonna cover some of my personal thoughts on selecting a bootcamp as well as my interview process below.
+const choosing = `	The Bay Area, being the tech hub that it has become, is filled with web development bootcamps. App Academy, HackReactor, General Assembly, Dev Bootcamp, and even UC Berkeley had coding programs to offer! What are the pros and cons of each, tuition costs, tech stack offered, student reviews, program duration, acceptance rate, job placement rate…there were just so many factors to consider. I'm gonna cover some of my personal thoughts on selecting a bootcamp as well as my interview process below.
 
 
 Tech Stack:
