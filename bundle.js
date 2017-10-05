@@ -26135,7 +26135,7 @@ var Media = function (_React$Component) {
           { className: 'caption' },
           'Personal Work Room With A View'
         ),
-        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180786/blog/3_-_interview.png' }),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180786/blog/3_-_interview.png' }),
         _react2.default.createElement(
           'div',
           { className: 'caption' },
@@ -26145,13 +26145,273 @@ var Media = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'caption' },
-          'Gotta Have My Boba'
+          'Prepping For The Interview With Some Boba'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507194951/accepted_foaxrd.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Accepted!'
         ),
         _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180850/blog/6_-_day1.jpg' }),
         _react2.default.createElement(
           'div',
           { className: 'caption' },
-          'App Academy Day 1'
+          'Early Morning App Academy Day 1'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180830/blog/8_-_bus_work.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Prepping For An Upcoming Assessment. Excuse the dirty screen'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video' },
+          _react2.default.createElement(
+            'video',
+            { className: 'vertical', controls: true },
+            _react2.default.createElement('source', { src: 'https://res.cloudinary.com/ac31624/video/upload/v1507180821/blog/9_-_last.mp4', type: 'video/mp4' }),
+            'Your browser does not support the video tag.'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Sunday Night Grind Sessions Before Monday Assessments (S/O To Yong Lin)'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180810/blog/10_-_pills.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Definitely Overdosed On These Caffeine Pills A Couple Times'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180834/blog/11_-_catsproj.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Early Stages Of Projects'
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180832/blog/12_-_rush_hour.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Might As Well Have Fun While You\'re At It'
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180817/blog/13_-_ssbm.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'How To Take A Break: Play Super Smash Brothers Melee On An Emulator'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video' },
+          _react2.default.createElement(
+            'video',
+            { className: 'vertical', controls: true },
+            _react2.default.createElement('source', { src: 'https://res.cloudinary.com/ac31624/video/upload/v1507180852/blog/31_-_melee.mp4', type: 'video/mp4' }),
+            'Your browser does not support the video tag.'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Yup'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180853/blog/15_-_lunch_views.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Lunchtime Views'
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180826/blog/14_-_sushi.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'When You Find Out SF Charges $8 for 4 Pieces of California Roll'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180867/blog/16_-_pool.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Taking A Friday Night Off'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180865/blog/17_-_kelly.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Shoutout To Kelly Chung, One Of The Senior TAs. Still Gotta Make That Yeezy Bot, Bro.'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video' },
+          _react2.default.createElement(
+            'video',
+            { className: 'vertical', controls: true },
+            _react2.default.createElement('source', { src: 'https://res.cloudinary.com/ac31624/video/upload/v1507180857/blog/18_-_kobe.mp4', type: 'video/mp4' }),
+            'Your browser does not support the video tag.'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'This Is What Happens When You Partner Up With a Lakers Fan (S/O To Sean Perfecto)'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180870/blog/20_-_widgets.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Simple React.js Projects'
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180795/blog/21_-_cafe.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'So. Many. Cafes.'
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180792/blog/22_-_berkeley.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Couldn\'t Miss My Cuzzo\'s Commencement Ceremony At Berkeley (S/O to Sonny Chen)'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180803/blog/24_-_rails.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Full Stack Project In Production: Ruby on Rails Backend'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180803/blog/23_-_fspbeta.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Full Stack Project In Production: React Frontend'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1498682892/Screen_Shot_2017-06-28_at_1.47.16_PM_o29y2x.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Snippet Of My Full Stack Project: ',
+          _react2.default.createElement(
+            'a',
+            { className: 'url', href: 'http://www.airbadnboujee.com/', target: '_blank' },
+            'AirBadnBoujee'
+          )
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180875/blog/success.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'When You Finally Find The Bug You\'ve Been Looking Two Hours For, You Do A Walkoff'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'video' },
+          _react2.default.createElement(
+            'video',
+            { className: 'vertical', controls: true },
+            _react2.default.createElement('source', { src: 'https://res.cloudinary.com/ac31624/video/upload/v1507180868/blog/32_-_thotdog.mp4', type: 'video/mp4' }),
+            'Your browser does not support the video tag.'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'No Caption Needed'
+        ),
+        _react2.default.createElement('img', { className: 'photo vertical', src: 'https://res.cloudinary.com/ac31624/image/upload/a_0/v1507180836/blog/26_-_tetris.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Early Stages Of A JavaScript Project'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1496421275/Screen_Shot_2017-06-02_at_9.33.16_AM_tm5nja.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          _react2.default.createElement(
+            'a',
+            { className: 'url', href: 'https://alnchen.github.io/Throwback_Tetris/', target: '_blank' },
+            'Throwback Tetris.'
+          ),
+          ' Inspired By My 10th Birthday Present'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180852/blog/30_-_diploma.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Piece Of Paper Worth $(calc(futureSalary * 18%))'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507195108/blog/27_-_classphoto.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'App Academy March 2017 Cohort'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507195179/blog/28_-_wall_of_fame.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Made It To The Wall Of Fame'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507194955/awards_swx9ua.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Our Awards Ceremony: App Academy Idol'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180801/blog/25_-_squad.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Selfie With The Presidio Group'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180849/blog/29_-_anywhere.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Start Of Job Search'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180882/blog/34_-_networking.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Meetups and Networking Events. Photo Taken at Lyft HQ'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180867/blog/33_-_glutesquad.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'One More Meal Before Some Homies Move Back Home (S/O To GluteSquad)'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180865/blog/19_-_support_system.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Definitely The Best Support System I Have.'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507196817/stats_wi1cbm.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          '458 Applications. Not A Typo'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180870/blog/35_-_offer.png' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'After Three Months Of Self-Driven Studying That Lead To',
+          _react2.default.createElement('br', null),
+          'Countless Phone Interviews, Tech Challenges, Rejection Letters, and Repetition,',
+          _react2.default.createElement('br', null),
+          'The Stars Finally Aligned For Me. Blessed!'
+        ),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507200291/36_-_signed_qwrldu.jpg' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'caption' },
+          'Excited For What Lies Ahead!'
         )
       );
     }

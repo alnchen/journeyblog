@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .logo {
@@ -104,16 +105,40 @@ body {
 
 .media {
   margin-left: 19vw;
+  margin-bottom: 75px;
 }
 
 .photo {
   margin: 0 auto;
-  max-width: 45vw;
+  max-width: 50vw;
   min-width: 300px;
   height: auto;
-  padding-top: 40px;
+  padding-top: 75px;
 }
 
 .caption {
+  margin-top: 8px;
   text-align: center;
+}
+
+.vertical {
+  max-width: 30vw;
+  /*min-width: 300px;*/
+  height: auto;
+}
+
+.video {
+  margin: 0 auto;
+  max-width: 30vw;
+  /*min-width: 300px;*/
+  padding-top: 75px;
+  /*margin: 0 auto;*/
+}
+
+.url {
+  color: blue;
+}
+
+.url:hover {
+  border-bottom: solid blue 1px;
 }
