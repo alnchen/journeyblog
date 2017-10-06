@@ -13,7 +13,7 @@ class Section extends React.Component {
         'Intro',
         'Choosing a Bootcamp',
         'The Course',
-        'Final Projects',
+        'Projects',
         'Tips and Pointers',
         'Job Search',
         'Overall Experience',
