@@ -13,6 +13,7 @@ class Navbar extends React.Component {
       for (var i = 0; i < allLinks.length; i++) {
         allLinks[i].style.backgroundColor = "#404751";
         allLinks[i].style.borderColor = "black";
+        allLinks[i].style.color = "white";
         allLinks[i].removeEventListener('click', this.handleOutsideClick, false);
       }
     }
