@@ -25901,7 +25901,7 @@ var Section = function (_React$Component) {
   _createClass(Section, [{
     key: 'render',
     value: function render() {
-      var sections = ['Intro', 'Choosing a Bootcamp', 'The Course', 'Projects', 'Tips and Pointers', 'Job Search', 'Overall Experience', 'Photos and Videos'];
+      var sections = ['Intro', 'Choosing a Bootcamp', 'The Course', 'Projects', 'Job Search', 'Tips and Pointers', 'Overall Experience', 'Photos and Videos'];
 
       var links = sections.map(function (link, idx) {
         var path = link.toLowerCase().replace(/ /g, '');
@@ -25972,6 +25972,7 @@ var LinkItem = function (_React$Component) {
   _createClass(LinkItem, [{
     key: 'handleClick',
     value: function handleClick(e) {
+      scroll(0, 0);
       var allLinks = document.getElementsByClassName("link");
 
       for (var i = 0; i < allLinks.length; i++) {

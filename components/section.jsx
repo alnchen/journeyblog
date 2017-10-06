@@ -14,8 +14,8 @@ class Section extends React.Component {
         'Choosing a Bootcamp',
         'The Course',
         'Projects',
-        'Tips and Pointers',
         'Job Search',
+        'Tips and Pointers',
         'Overall Experience',
         'Photos and Videos'
       ];

@@ -12,6 +12,7 @@ class LinkItem extends React.Component {
     }
 
     handleClick(e) {
+      scroll(0,0);
       var allLinks = document.getElementsByClassName("link");
 
       for (var i = 0; i < allLinks.length; i++) {

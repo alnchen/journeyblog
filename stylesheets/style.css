@@ -102,7 +102,7 @@ body {
 
 .text {
   margin: 40px 8vw;
-  background-color: #fcfcf4;
+  background-color: #efefef;
   padding: 20px;
   font-size: 16px;
   border-radius: 3px;
@@ -121,7 +121,7 @@ body {
   height: auto;
   /*padding-top: 75px;*/
   /*margin-top: 75px;*/
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .caption {
@@ -154,4 +154,12 @@ body {
 
 .media-title {
   padding-top: 40px;
+}
+
+video::-webkit-media-controls {
+    overflow: hidden !important
+}
+video::-webkit-media-controls-enclosure {
+    width: calc(100% + 32px);
+    margin-left: auto;
 }
