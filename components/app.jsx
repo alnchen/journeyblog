@@ -3,12 +3,12 @@ import Navbar from './navbar';
 import Section from './section';
 import Post from './post';
 import Media from './media';
+import Home from './home';
 import { Route, HashRouter, Link, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
     constructor() {
       super();
-
     }
 
     render() {
@@ -19,11 +19,13 @@ class App extends React.Component {
             <Section />
             <div className='mainbody'>
               <Redirect to="/"/>
+              <Route exact path="/" component={Home} />
               <Route exact path="/intro" render={introComp} />
               <Route exact path="/choosingabootcamp" render={choosingComp} />
               <Route exact path="/thecourse" component={courseComp} />
               <Route exact path="/projects" component={projectsComp} />
               <Route exact path="/photosandvideos" component={Media} />
+              <Route exact path="/tipsandpointers" component={tipsComp} />
             </div>
         </div>
         </HashRouter>
@@ -40,11 +42,11 @@ export default App;
 
 // content
 
-const intro = `	I first heard about these coding bootcamps about two years ago. And quite frankly, I didn’t think much of them as they sounded “too good to be true”. The idea that in a matter of weeks, this program can turn virtually anybody, regardless of background and knowledge, into a solid web developer making $100k+ sounded like a scam that is marketed all too well. I was in doubt and, on top of that, I was satisfied with what I was doing over at Facebook on the Search Team (special shoutout to all my day1 homies at mpk14) so I brushed it off and carried on.
+const intro = `	I first heard about these coding bootcamps about two years ago. And quite frankly, I didn’t think much of them as they sounded “too good to be true”. The idea that in a matter of weeks, this program can turn virtually anybody, regardless of background and knowledge, into a solid developer making $100k+ sounded like a scam that is marketed all too well. I was in doubt and, on top of that, I was satisfied with what I was doing over at Facebook on the Search Team (special shoutout to all my day1 homies at mpk14) so I brushed it off and carried on.
 
-	But as time went on, I started hearing much more about these bootcamps and the “real-world success stories” by students, especially in the San Francisco Bay Area. It had become such a fad to the point where it seemed like new bootcamps were being formed on a monthly basis. What really struck me was finding out that a great buddy of mine, Raymond Zhang, had completed a bootcamp called App Academy and was in the process of job hunting for software engineering positions (s/o to RayZ). And so I became curious. Very curious. But the bigger question I had was still: is it worth it?
+	But as time went on, I started hearing much more about these bootcamps and the “real-world success stories” by students, especially in the San Francisco Bay Area. It had become such a fad to the point where it seemed like new bootcamps were being formed on a monthly basis. On top of this, I got to meet and work with some great engineers over at Facebook and it really inspired me to see what they were able to do. I was envious of their day-to-day lives, workflow, team collaborative efforts, and overall work satisfaction and craved for the same. Seeds that were previously planted in my head had definitely sprouted at this point. What really struck me was finding out that a great buddy of mine, Raymond Zhang, had completed a bootcamp called App Academy and was in the process of job hunting for software engineering positions (s/o to RayZ). And so I became curious. Very curious. But the bigger question I had was still: is it worth it?
 
-	Long story short, this question would ultimately be answered by some unfortunate work circumstances. And if I were to ever take a big risk, this would be the time. So with that, I started reaching out to my buddies, especially Raymond in particular, to pick their brains a little bit and gather insight on their experiences and ideas. I also resorted to Google (of course) and Reddit (lol) to do some further research on the many bootcamps available. At this point in time, I was determined that enrolling in a coding bootcamp is what I wanted to do.
+	Long story short, this question would ultimately be answered by some unfortunate work circumstances that motivated me to go all in on making this career jump. And if I were to ever take a big risk, this would be the time. So with that, I started reaching out to my buddies, especially Raymond in particular, to pick their brains a little bit and gather insight on their experiences and ideas. I also resorted to Google (of course) and Reddit (lol) to do some further research on the many bootcamps available. At this point in time, I was determined that enrolling in a coding bootcamp is what I wanted to do.
 `;
 const introComp = (props) => <Post content={intro} />;
 
@@ -105,5 +107,38 @@ Flex/Group Project:
 	Because we had no prior knowledge of Python and Django, we had to find tutorials online to familiarize ourselves on this language and framework. Django Girls, as funny as it sounds, proved to be a valuable resource as it definitely provided us with a good foundation for constructing our own backend API endpoint. Our counterparts purchased tutorials on Udemy to understand React Native.
 	Quite honestly, my main takeaway from this project is the importance of team collaboration. It is absolutely undervalued how important communication is especially when the collective team is split into subgroups manhandling the frontend and backend individually. We decided that we had to get together about once a day to go over action items, bugs to fix, what to expect from each other, etc. This project definitely gave me a lot of talking points going into my job search because I was exposed to the many facets of web development.
 `
-
 const projectsComp = (props) => <Post content={projects} />;
+
+
+const tips = `
+Throughout The Course:
+	-Eat well and stay hydrated so you do not suffer from fatigue or illnesses
+	-Get as much sleep as you can in order to better absorb and retain new information
+	-Make friends! This will be a great network in your professional career
+	-Don’t be afraid to ask for help. It’s the best way to learn
+	-Everybody comes in with a different background and skill level. Learn to adapt!
+	-Make most of the TA Office Hours. One thing for sure is all a/A staff is incredibly nice and willing to help
+	-Block out a small chunk of your weekend to go out and do something. Your mind needs to get away from the computer and recharge
+	-Try to live as close to the office as possible. My nearly one-hour commute made time management more difficult
+
+
+Projects:
+	-Dedicate 100% and more when working on these projects
+	-This is your time to get help when needed to make them stand out
+	-Architect projects that can showcase your skills and creativity
+	-Projects are one of the only ways you can sell yourself to a recruiter
+	-Write clean and efficient code. Doesn’t happen all the time but some employers do look into your Github
+	-Aim high and set high goals when it comes to expectations for yourself
+	-For group projects, learn to work effectively with other developers especially when it comes to planning
+
+
+Job Search:
+	-Self motivation is the absolute biggest factor to a successful job search
+	-Keep yourself driven and stay dedicated
+	-Get in the habit of organizing a day’s events
+	-Read and work through “Cracking the Coding Interview” by Gayle Laakmann McDowell
+	-NETWORK! Making friends within a company will give you a huge edge
+	-Reach out to your connections only after you’ve gotten your foot in the water with several interviews. You want to be as prepared as possible
+	-Imposter syndrome is real. It affects even the most senior of engineers. In the software development world, there is no way you can know it all
+`
+const tipsComp = (props) => <Post content={tips} />;

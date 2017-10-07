@@ -35,11 +35,11 @@ class LinkItem extends React.Component {
     }
 
     render() {
-      let bgColor = this.state.clicked ? '#7e8eaa' : '#404751',
-          borderColor = this.state.clicked ? '#7e8eaa' : "black",
-          color = this.state.clicked ? 'black' : 'white';
+      let bgColor = this.state.clicked ? '#262626' : '#404751',
+          borderColor = this.state.clicked ? '#262626' : "black";
+          
       return (
-          <div className="link" style={{backgroundColor: bgColor, borderColor: borderColor, color: color}} onClick={this.handleClick}>
+          <div className="link" style={{backgroundColor: bgColor, borderColor: borderColor}} onClick={this.handleClick}>
             {this.props.title}
           </div>
       );

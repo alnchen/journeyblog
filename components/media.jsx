@@ -71,7 +71,7 @@ class Media extends React.Component {
           <div className='caption'>Taking A Friday Night Off</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180865/blog/17_-_kelly.jpg' />
-          <div className='caption'>Shoutout To Kelly Chung, One Of The Senior TAs. Still Gotta Make That Yeezy Bot, Bro.</div>
+          <div className='caption'>Kelly Chung, One Of The Homie TAs. Still Gotta Make That Yeezy Bot, Bro.</div>
 
           <div className='video'>
             <video className='vertical' controls>
