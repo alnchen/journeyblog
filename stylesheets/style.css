@@ -12,6 +12,7 @@ headerblue: #404751
 body {
   /*background-color: #262626;*/
   background-color: #262626;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -197,4 +198,20 @@ video::-webkit-media-controls-enclosure {
   background-color: black;
   overflow: hidden;
   object-fit: fill;
+}
+
+.desktop-name {
+
+}
+
+.mobile-name {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.selector {
+  display: none;
 }

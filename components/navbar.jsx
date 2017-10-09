@@ -21,9 +21,14 @@ class Navbar extends React.Component {
       return (
         <div className="navbar">
           <div className='navbar-section name'>
-            <Link to='/'><div onClick={this.handleClick}>Allen Chen</div></Link>
+            <Link className='desktop-name' to='/'><div onClick={this.handleClick}>Allen Chen</div></Link>
+            <Link className='mobile-name' to='/'>
+              <div onClick={this.handleClick}>
+                <div className='title mobile'>my<img className='logo' src='https://res.cloudinary.com/ac31624/image/upload/v1506937412/appacademy_logo_dyvlw0.png' />journey</div>
+              </div>
+            </Link>
           </div>
-          <div className='navbar-section title'>my<a href="https://www.appacademy.io/" target="_blank"><img className='logo' src='https://res.cloudinary.com/ac31624/image/upload/v1506937412/appacademy_logo_dyvlw0.png' /></a>journey</div>
+          <div className='navbar-section title desktop'>my<a href="https://www.appacademy.io/" target="_blank"><img className='logo' src='https://res.cloudinary.com/ac31624/image/upload/v1506937412/appacademy_logo_dyvlw0.png' /></a>journey</div>
           <div className='navbar-section links'>
             <a href="http://allenchen.io/" target="_blank"><i className="fa fa-id-badge" aria-hidden="true"></i></a>
             <a href="https://www.facebook.com/achen1231" target="_blank"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>

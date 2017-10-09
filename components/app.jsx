@@ -4,6 +4,7 @@ import Section from './section';
 import Post from './post';
 import Media from './media';
 import Home from './home';
+import Selector from './selector';
 import { Route, HashRouter, Link, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
           <div>
             <Navbar />
             <Section />
+            <Selector />
             <div className='mainbody'>
               <Route exact path="/" component={Home} />
               <Route exact path="/intro" render={introComp} />
