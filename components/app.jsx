@@ -18,7 +18,6 @@ class App extends React.Component {
             <Navbar />
             <Section />
             <div className='mainbody'>
-              <Redirect to="/"/>
               <Route exact path="/" component={Home} />
               <Route exact path="/intro" render={introComp} />
               <Route exact path="/choosingabootcamp" render={choosingComp} />
@@ -42,7 +41,7 @@ export default App;
 
 // content
 
-const intro = `	I first heard about these coding bootcamps about two years ago. And quite frankly, I didn’t think much of them as they sounded “too good to be true”. The idea that in a matter of weeks, this program can turn virtually anybody, regardless of background and knowledge, into a solid developer making $100k+ sounded like a scam that is marketed all too well. I was in doubt and, on top of that, I was satisfied with what I was doing over at Facebook on the Search Team (special shoutout to all my day1 homies at mpk14) so I brushed it off and carried on.
+const intro = `	I first heard about these coding bootcamps about two years ago. And quite frankly, I didn’t think much of them as they sounded “too good to be true”. The idea that in a matter of weeks, this program can turn virtually anybody, regardless of background and knowledge, into a solid developer making $100k+ sounded like a scam marketed all too well. I was in doubt and, on top of that, I was satisfied with what I was doing over at Facebook on the Search Team (special shoutout to all my day1 homies at mpk14) so I brushed it off and carried on.
 
 	But as time went on, I started hearing much more about these bootcamps and the “real-world success stories” by students, especially in the San Francisco Bay Area. It had become such a fad to the point where it seemed like new bootcamps were being formed on a monthly basis. On top of this, I got to meet and work with some great engineers over at Facebook and it really inspired me to see what they were able to do. I was envious of their day-to-day lives, workflow, team collaborative efforts, and overall work satisfaction and craved for the same. Seeds that were previously planted in my head had definitely sprouted at this point. What really struck me was finding out that a great buddy of mine, Raymond Zhang, had completed a bootcamp called App Academy and was in the process of job hunting for software engineering positions (s/o to RayZ). And so I became curious. Very curious. But the bigger question I had was still: is it worth it?
 

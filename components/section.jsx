@@ -24,8 +24,8 @@ class Section extends React.Component {
         const path = link.toLowerCase().replace(/ /g,'');
 
         return (
-          <Link to={path}>
-            <LinkItem key={idx} title={link} path={path} />
+          <Link key={idx} to={path}>
+            <LinkItem title={link} path={path} />
           </Link>
         );
       });

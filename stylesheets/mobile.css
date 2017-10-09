@@ -1,0 +1,19 @@
+@media only screen
+  and (min-device-width: 300px)
+  and (max-device-width: 736px) {
+
+    .navbar {
+      position: fixed;
+      top: 0px;
+      width: 100vw;
+      height: 40px;
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+      border-bottom: 1px solid black;
+    }
+
+}
