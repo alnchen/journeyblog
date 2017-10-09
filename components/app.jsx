@@ -157,10 +157,10 @@ Job Readiness:
 Networking:
 	Think of a what it’s like to be a recruiter for a second (props to Arthur Chen). Your job is to find the right person for an opening. Now think about how many developers are situated in the Bay Area and imagine endlessly going through resumes to find potential candidates. It’s like finding a needle in a haystack! And what I’m trying to emphasize is not how shitty of a situation this is for the recruiter but rather how difficulty it can be for the applicants on the other end. This is what makes networking such a powerful tool. The idea is simple:
 
-1.	Make connections through meetups/social gatherings
-2.	Reach out to connections when you see a job opening
-3.	Express your interest, chit-chat, you know…the whole shebang
-4.	Resume bumped to the very top of the tall stack of resumes for consideration
+		1) Make connections through meetups/social gatherings
+		2) Reach out to connections when you see a job opening
+		3) Express your interest, chit-chat, you know…the whole shebang
+		4) Resume bumped to the very top of the tall stack of resumes for consideration
 
 But at the same time, I decided to reach out to my network only after I got my feet a bit wet. I didn’t want to blow all my connections at first and wanted to wait a bit until I truly felt prepared. This is the case for me only; some people are definitely much more ready and confident right off the bat.
 
