@@ -20,6 +20,7 @@ class App extends React.Component {
             <Section />
             <Selector />
             <div className='mainbody'>
+              <Redirect to="/"/>
               <Route exact path="/" component={Home} />
               <Route exact path="/intro" render={introComp} />
               <Route exact path="/choosingabootcamp" render={choosingComp} />
@@ -28,6 +29,7 @@ class App extends React.Component {
               <Route exact path="/photosandvideos" component={Media} />
               <Route exact path="/tipsandpointers" component={tipsComp} />
               <Route exact path="/jobsearch" component={jobSearchComp} />
+              <Route exact path="/overallexperience" component={experienceComp} />
             </div>
         </div>
         </HashRouter>
@@ -93,7 +95,9 @@ Structure:
 `;
 const courseComp = (props) => <Post content={course} />;
 
-const projects = `Full Stack Project:
+const projects = `	The projects at App Academy definitely provided a good portfolio for future employers. There is a wide range of technical knowledge needed to construct these projects, from frontend to backend frameworks to architectural design and maximizing efficiency. Throughout my interviews, I was asked to talk about my projects many times and even had to dig into the code to explain individual parts. By hand constructing all these projects, we become experts with all facets of the product. Own your code!
+
+Full Stack Project:
 	When it comes to deciding on full stack projects, we select three websites that we want to model after and our group leader makes the decision for us. My choices were AirBnb, Soundcloud, and 500px and the main factor as to why I decided on these three were primarily because these web applications allow me to enrich the content (photos or music) for a better overall experience on the user end. I was ultimately assigned AirBnb and could not be more grateful that my first choice was given to me.
 	We spend pretty much all of weeks 8 and 9 on this project. Every single day involved showing up at 9am and jumping right into the project until the end of the day. I can confidently say this was my favorite part of the curriculum because of the freedom to work independently all while putting together all of our learnings into one project. Throughout these two weeks I definitely got a much better understanding of every single concept I had picked up from weeks 1-7 and I can understand why this full stack project is so fundamental in the curriculum.
 	When it comes to time management, you are your own boss. There will be a direct correlation between effort and how rich your project is. Two weeks may seem like a long time but it goes by incredibly fast and we came to realize that even the most minor of bugs could set our timeline back a good amount. This was also a great opportunity for us to get better with using Github as we definitely wanted a way to manage the project more efficiently throughout the two weeks. Either that or learn the hard way with using Github by resetting your entire project to an earlier stage (s/o to Yong Lin).
@@ -166,3 +170,11 @@ Motivation:
 	But I remembered what my peers at App Academy had mentioned to me time and time again: keep pushing through because it will be worth it one day. It sounds corny and cheesy but it is absolutely true. It’s a marathon, not a sprint (as my homie Kenton says, although in much different context). The job search is a process that requires consistent learning of new material and because I had something to take away from each of those failed interviews, I knew how to improve myself. So after I took the weekend to shake off my emotional self and recharge, I got right back to work the next week. To all current job hunters out there, job hunting can be a long and draining process but just keep your eyes on the end goal and keep pushing yourself. The feeling at the end of the tunnel is so much sweeter knowing that you gave it your all to get there.
 `;
 const jobSearchComp = (props) => <Post content={jobSearch} />;
+
+const experience = `	If you’ve got the time, money as well as interest in learning software development, a coding bootcamp will hands down be a great decision. But there will not be a good fit for those who are expecting things to be handed to them on a silver platter. If I can give a fairly subjective measurement of effort, achieving success is 90% on you. The bootcamp simply gives you good structure, albeit great structure in App Academy’s case.
+
+	When it comes to my circumstances, I definitely believe I made the right choice. Do I regret not majoring in Computer Science? Not so much. My work experiences prior to this have shaped me into who I am. I’ve picked up management experience, interpersonal skills, technical training knowledge, and can now say that I’ve worn many hats while working in the tech industry. But now with software engineering, I can do what I’ve always loved to do: build things. And also make sneakerbots too I guess. There is still a lot to learn on my end. I’ve merely scratched the surface of software engineering. But I tend to approach the rest of my career like I did with the bootcamp; letting my curiosity guide the way. It’s the best way to learn IMHO!
+
+	Once again, this blog is mostly a way for me to personally remember this journey of mine but I hope the insight I’ve provided can help any future developer out there. For those of you interested in learning more about App Academy, you can click on the App Academy logo at the top of the page for my referral link.
+`;
+const experienceComp = (props) => <Post content={experience} />;
