@@ -149,7 +149,7 @@ class Media extends React.Component {
           <div className='caption'>458 Applications. Not A Typo</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180870/blog/35_-_offer.png' />
-          <div className='caption'>After Three Months Of Self-Driven Studying That Lead To<br/>Countless Phone Interviews, Tech Challenges, Rejection Letters, and Repetition,<br/>The Stars Finally Aligned For Me. Blessed!</div>
+          <div className='caption'>After Three Months Of Self-Driven Studying, Countless Phone Interviews, Technical Challenges, Rejection Letters, and Repetition, The Stars Finally Aligned For Me. Extremely Grateful And Blessed!</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507200291/36_-_signed_qwrldu.jpg' />
           <div className='caption'>Excited For What Lies Ahead!</div>

@@ -77,8 +77,8 @@
   }
 
   .text {
-    font-size: 16px;
-    padding: 15px;
+    font-size: 15px;
+    padding: 20px;
     margin: 0px 50px;
   }
 
@@ -106,11 +106,53 @@
     justify-content: center;
     max-width: 75vw;
     width: auto;
-    background-color: red;
   }
 
   .vertical {
     max-width: 75vw;
     height: auto;
+  }
+
+  .links *:hover {
+    transform: none;
+  }
+
+  .home-photo-container {
+    display: none;
+  }
+
+  .home-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .caption {
+    width: 60vw;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 0px 160px 0px;
+  }
+
+  .homephoto-mobile {
+    position: relative;
+    bottom: 63px;
+    height: calc(100vh - 630px);
+    object-fit: cover;
+    /*width: 100vw;*/
+    /*height: auto;*/
+  }
+
+  .home-container {
+    margin: 0 auto;
+  }
+
+  .disclaimer {
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    width: 100vw;
+    position: absolute;
+    top: 1690px;
+    font-size: 18px;
   }
 }

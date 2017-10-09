@@ -22719,6 +22719,7 @@ var Navbar = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
 
     _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleMobileClick = _this.handleMobileClick.bind(_this);
     return _this;
   }
 
@@ -22732,6 +22733,11 @@ var Navbar = function (_React$Component) {
         allLinks[i].style.borderColor = "black";
         allLinks[i].removeEventListener('click', this.handleOutsideClick, false);
       }
+    }
+  }, {
+    key: 'handleMobileClick',
+    value: function handleMobileClick() {
+      scroll(0, 0);
     }
   }, {
     key: 'render',
@@ -22753,7 +22759,7 @@ var Navbar = function (_React$Component) {
           ),
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { className: 'mobile-name', to: '/' },
+            { className: 'mobile-name', to: '/', onClick: this.handleMobileClick },
             _react2.default.createElement(
               'div',
               { onClick: this.handleClick },
@@ -26380,11 +26386,7 @@ var Media = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'caption' },
-          'After Three Months Of Self-Driven Studying That Lead To',
-          _react2.default.createElement('br', null),
-          'Countless Phone Interviews, Tech Challenges, Rejection Letters, and Repetition,',
-          _react2.default.createElement('br', null),
-          'The Stars Finally Aligned For Me. Blessed!'
+          'After Three Months Of Self-Driven Studying, Countless Phone Interviews, Technical Challenges, Rejection Letters, and Repetition, The Stars Finally Aligned For Me. Extremely Grateful And Blessed!'
         ),
         _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507200291/36_-_signed_qwrldu.jpg' }),
         _react2.default.createElement(
@@ -26441,6 +26443,11 @@ var Home = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'home-container' },
+        _react2.default.createElement(
+          'div',
+          { className: 'home-mobile' },
+          _react2.default.createElement('img', { className: 'homephoto-mobile', src: 'https://res.cloudinary.com/ac31624/image/upload/c_scale,w_4000/v1507343914/bridge_zedpea.jpg' })
+        ),
         _react2.default.createElement(
           'div',
           { className: 'home-photo-container' },

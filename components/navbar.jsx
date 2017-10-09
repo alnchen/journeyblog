@@ -5,6 +5,7 @@ class Navbar extends React.Component {
     constructor() {
       super();
       this.handleClick = this.handleClick.bind(this);
+      this.handleMobileClick = this.handleMobileClick.bind(this);
     }
 
     handleClick() {
@@ -17,12 +18,16 @@ class Navbar extends React.Component {
       }
     }
 
+    handleMobileClick() {
+      scroll(0,0);
+    }
+
     render() {
       return (
         <div className="navbar">
           <div className='navbar-section name'>
             <Link className='desktop-name' to='/'><div onClick={this.handleClick}>Allen Chen</div></Link>
-            <Link className='mobile-name' to='/'>
+            <Link className='mobile-name' to='/' onClick={this.handleMobileClick}>
               <div onClick={this.handleClick}>
                 <div className='title mobile'>my<img className='logo' src='https://res.cloudinary.com/ac31624/image/upload/v1506937412/appacademy_logo_dyvlw0.png' />journey</div>
               </div>

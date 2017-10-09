@@ -79,7 +79,10 @@ body {
   width: 18vw;
   height: calc((100vh - 56px)/8);
   /*padding: 5px 2vw;*/
-  border: 1px #758396 solid;
+  /*border: 1px #758396 solid;*/
+  border-top: 1px #758396 solid;
+  border-right: 1px #758396 solid;
+  border-bottom: 1px #758396 solid;
   /*background-color: #404751;*/
   background-color: #404751;
   display: flex;
@@ -183,8 +186,8 @@ video::-webkit-media-controls-enclosure {
 }
 
 .disclaimer {
-  bottom: 8px;
-  right: 8px;
+  bottom: 12px;
+  right: 12px;
   color: grey;
   font-size: 1.3vw;
   position: absolute;
@@ -213,5 +216,9 @@ video::-webkit-media-controls-enclosure {
 }
 
 .selector {
+  display: none;
+}
+
+.home-mobile {
   display: none;
 }
