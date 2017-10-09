@@ -27,6 +27,7 @@ class App extends React.Component {
               <Route exact path="/projects" component={projectsComp} />
               <Route exact path="/photosandvideos" component={Media} />
               <Route exact path="/tipsandpointers" component={tipsComp} />
+              <Route exact path="/jobsearch" component={jobSearchComp} />
             </div>
         </div>
         </HashRouter>
@@ -75,7 +76,7 @@ Congratulations, Allen!
 Yay! We think you'd be a great fit for App Academy and we'd love to have you join us! Many highly qualified applicants applied, and we took great care to select those with exceptional backgrounds and potential. You stood out to us!
 
 I was so excited! But with the acceptance came much more prep material. It was time to get back to work.
-`
+`;
 const choosingComp = (props) => <Post content={choosing} />;
 
 const course = `	Having had great success since 2013, App Academy definitely had a great curriculum cut out for us. On top of this, there is a constant desire to update areas where content may seem outdated or ill-fitted.  Just based on my short time there, I noticed several occasions where the readings or projects were altered for the betterment of the program and learnings. As a student progresses through the course, he/she is asked for feedback many times and this feedback is definitely taken into heavy consideration as it has been emphasized to us many times that the student’s ability to learn will always be placed at the top of App Academy’s priority list. With that said, I will use this section to dive deeper into my day-to-day experiences during these several months.
@@ -89,7 +90,7 @@ Structure:
 	My friend Raymond Zhang had previously warned me about the course by saying “you will always feel like you’re behind”. Even after day 1, this was absolutely the case for me. Though the curriculum jumps incredibly fast from subject to subject, I believe it was organized and taught incredibly efficiently. Prior to the start of the program, we are prepped on basic algorithms and simply understanding syntax, methods, and coding style of Ruby. This is a great transition into the first two or so weeks where we dive deeper into Ruby by exploring Object Oriented Programming at a much deeper level. After acquiring a solid foundation for Ruby, we dive into SQL and the topics of relational databases, MVC architecture, and HTTP/API Routing. This is fundamental in our understanding of backends. Pause.
 	We then jump into JavaScript. The beginning of this portion of the curriculum is very much like what we did in the Ruby portion but, we’re basically doing all those algorithm problems in JavaScript now. We also dive into more specific JS concepts such as callbacks and closures. These two ideas were incredibly frustrating at first (s/o to Jill De Los Angeles and our JS struggle day) but I’ve learned to appreciate how useful they can be, especially given that you’re able to do things in JS that you cannot do in Ruby. As we deepen our knowledge of JS, we jump into JavaScript libraries such as React and jQuery which allow us to really get started on frontend web development.
 	With all this under our belt by the end of week 7, it’s time to put everything we’ve learned together. We have all the necessary knowledge and so we now dedicate the next two weeks on our full stack projects.
-`
+`;
 const courseComp = (props) => <Post content={course} />;
 
 const projects = `Full Stack Project:
@@ -107,12 +108,11 @@ Flex/Group Project:
 	Once again, deciding on an idea was an issue during the early stages of the project. We probably shifted ideas at least 10 times. The whiteboard was filled with pictures, arrows, bullet points, and so much code. Without diving into too much detail, we ultimately decided to build an app with the emphasis of “solving a real world problem”. We split the team of four into groups of two, with each group handling one “end” of the application. I worked alongside Yong and on the Django backend.
 	Because we had no prior knowledge of Python and Django, we had to find tutorials online to familiarize ourselves on this language and framework. Django Girls, as funny as it sounds, proved to be a valuable resource as it definitely provided us with a good foundation for constructing our own backend API endpoint. Our counterparts purchased tutorials on Udemy to understand React Native.
 	Quite honestly, my main takeaway from this project is the importance of team collaboration. It is absolutely undervalued how important communication is especially when the collective team is split into subgroups manhandling the frontend and backend individually. We decided that we had to get together about once a day to go over action items, bugs to fix, what to expect from each other, etc. This project definitely gave me a lot of talking points going into my job search because I was exposed to the many facets of web development.
-`
+`;
 const projectsComp = (props) => <Post content={projects} />;
 
 
-const tips = `
-Throughout The Course:
+const tips = `Throughout The Course:
 	-Eat well and stay hydrated so you do not suffer from fatigue or illnesses
 	-Get as much sleep as you can in order to better absorb and retain new information
 	-Make friends! This will be a great network in your professional career
@@ -141,5 +141,28 @@ Job Search:
 	-NETWORK! Making friends within a company will give you a huge edge
 	-Reach out to your connections only after you’ve gotten your foot in the water with several interviews. You want to be as prepared as possible
 	-Imposter syndrome is real. It affects even the most senior of engineers. In the software development world, there is no way you can know it all
-`
+`;
 const tipsComp = (props) => <Post content={tips} />;
+
+const jobSearch = `	As difficult as the 12-week curriculum was, it doesn’t compare to the job search process afterwards. What makes finding a job so difficult is due to a myriad of factors; network, connections, previous experiences, education, technical skill level, social skill level, company tech stack, there are just too many to name! In this section, I will dive into my personal experience throughout the job search.
+
+Job Readiness:
+	One of the biggest questions I get when people ask me about the bootcamp is whether or not I feel prepared for a job coming out of it. Quite honestly, my answer has been yes and no. First off, I would like to emphasize that App Academy’s curriculum is second to none and I learned about as much as I possibly could in the short span of three months. With that being said, the web development world has changed and with these changes comes a different interview experience from that of my colleagues in previous cohorts. With how hot the Bay Area is for tech, it has become a migration hub for all aspiring software engineers. And due to the saturation of this market, companies are looking for ways to filter out the best of the best through advanced technical screens and thorough interview processes. Basically, we are tested in areas deeper than we have been exposed to. Based on my bad interviews, I have been in situations where I had no clue how to tackle a problem and this is usually because it is such a specific problem that I was just never exposed to the concept.
+	So why do I answer yes as well as no? It’s really simple. App Academy provides students with the necessary foundation for learning because we are exposed to almost all facets of web development. The idea is for us to touch on the subject matter during the course and to strengthen those skills as we progress through our careers. I can confidently say that the change in my skill level from the day I finished the bootcamp and three months later is monumental. Not only did I look back at the curriculum to patch up holes but I now had the time to dive deeper into areas that I wanted to strengthen via external resources and solo projects. I also wanted to mention that with each technical interview I did poorly in, I definitely took the time to break down what I did wrong and how I could have improved. The skills learned from this specific situation definitely sticks with me tightly. Learn from your mistakes? Or maybe I’m just salty. Anyways, what I’m really trying to stress is the idea that I came out of the program with a lot of knowledge but I consistently fell a bit short in passing my interviews and each time I failed, I advanced my skills by getting a better understanding of the areas that I needed more work.
+
+Networking:
+	Think of a what it’s like to be a recruiter for a second (props to Arthur Chen). Your job is to find the right person for an opening. Now think about how many developers are situated in the Bay Area and imagine endlessly going through resumes to find potential candidates. It’s like finding a needle in a haystack! And what I’m trying to emphasize is not how shitty of a situation this is for the recruiter but rather how difficulty it can be for the applicants on the other end. This is what makes networking such a powerful tool. The idea is simple:
+
+1.	Make connections through meetups/social gatherings
+2.	Reach out to connections when you see a job opening
+3.	Express your interest, chit-chat, you know…the whole shebang
+4.	Resume bumped to the very top of the tall stack of resumes for consideration
+
+But at the same time, I decided to reach out to my network only after I got my feet a bit wet. I didn’t want to blow all my connections at first and wanted to wait a bit until I truly felt prepared. This is the case for me only; some people are definitely much more ready and confident right off the bat.
+
+Motivation:
+	Probably the biggest factor not listed above is self-motivation. Having to do phone screens that lead to technical interviews which lead to more technical interviews which ultimately lead to onsite interviews only to get rejected and needing to start over is a DRAINING process. Not only can it be physically tiring but the mental impact is a bigger enigma for an individual.
+	I can say that my worst week probably came about two months into the job hunt. This was definitely the most promising week for me in terms of interviews and potential. I had six technical interviews with large companies scheduled. Nail any of them and I get to the final round onsite which, to be honest, I was actually more confident in because of the social atmosphere it presents, but that’s another story. Anyways, I scattered these interviews with Airbnb, Cisco Meraki, CourseHero, IXL Learning, etc. throughout the week and was excited to have such an opportunity. Fast forward through the week…bombed all of them. Did not get to the next round for a single one. This was the lowest point for me. I started questioning my own abilities and contemplating whether this was meant for me.
+	But I remembered what my peers at App Academy had mentioned to me time and time again: keep pushing through because it will be worth it one day. It sounds corny and cheesy but it is absolutely true. It’s a marathon, not a sprint (as my homie Kenton says, although in much different context). The job search is a process that requires consistent learning of new material and because I had something to take away from each of those failed interviews, I knew how to improve myself. So after I took the weekend to shake off my emotional self and recharge, I got right back to work the next week. To all current job hunters out there, job hunting can be a long and draining process but just keep your eyes on the end goal and keep pushing yourself. The feeling at the end of the tunnel is so much sweeter knowing that you gave it your all to get there.
+`;
+const jobSearchComp = (props) => <Post content={jobSearch} />;

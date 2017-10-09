@@ -1,6 +1,6 @@
 @media only screen
-  and (min-device-width: 300px)
-  and (max-device-width: 736px) {
+  and (min-device-width: 360px)
+  and (max-device-width: 565px) {
 
   body {
     background-color: #404751;
@@ -147,12 +147,172 @@
   }
 
   .disclaimer {
-    bottom: 0px;
+    bottom: 20px;
     right: 0px;
     text-align: center;
     width: 100vw;
     position: absolute;
-    top: 1690px;
+    font-size: 18px;
+  }
+}
+
+@media only screen
+  and (max-device-width: 360px) {
+
+  .links * {
+    display: none;
+  }
+
+  body {
+    background-color: #404751;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .navbar {
+    height: 100px;
+  }
+
+  .desktop-name {
+    display: none;
+  }
+
+  .mobile-name {
+    display: block;
+    font-size: 2vh;
+    padding-left: 4vw;
+  }
+
+  .navbar-section {
+    font-size: 2vh;
+  }
+
+  .logo {
+    height: 3vh;
+    padding: 0 5px;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  title {
+    width: 50vw;
+  }
+
+  .fa {
+    padding: 0 3.5vw;
+  }
+
+  .mainbody {
+    margin-top: 100px;
+  }
+
+  .link {
+    /*height: calc((100vh - 116px)/8);
+    font-size: 1.2vh;
+    justify-content: flex-start;
+    padding: 0 5px;
+    width: 12vw;*/
+    display: none;
+  }
+
+  .selector {
+    margin-top: 100px;
+    /*background-color: white;*/
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+  }
+
+  .section-button {
+    width: calc(50vw - 2px);
+    text-align: center;
+    height: 72px;
+    font-size: 30px;
+    padding: 30px 0;
+    border: 1px black solid;
+    background-color: #efefef;
+  }
+
+  .text {
+    font-size: 15px;
+    padding: 20px;
+    margin: 0px 50px;
+  }
+
+  .post {
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  .selector-links {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .media {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .photo {
+    max-width: 75vw;
+  }
+
+  .video {
+    display: flex;
+    justify-content: center;
+    max-width: 75vw;
+    width: auto;
+  }
+
+  .vertical {
+    max-width: 75vw;
+    height: auto;
+  }
+
+  .links *:hover {
+    transform: none;
+  }
+
+  .home-photo-container {
+    display: none;
+  }
+
+  .home-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .caption {
+    width: 60vw;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 0px 160px 0px;
+  }
+
+  .homephoto-mobile {
+    position: relative;
+    bottom: 63px;
+    height: calc(100vh - 630px);
+    object-fit: cover;
+    /*width: 100vw;*/
+    /*height: auto;*/
+  }
+
+  .home-container {
+    margin: 0 auto;
+  }
+
+  .disclaimer {
+    bottom: 20px;
+    right: 0px;
+    text-align: center;
+    width: 100vw;
+    position: absolute;
     font-size: 18px;
   }
 }
