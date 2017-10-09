@@ -26121,7 +26121,7 @@ var Media = function (_React$Component) {
         'div',
         { className: 'media' },
         _react2.default.createElement('div', { className: 'media-title' }),
-        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/v1507180795/blog/1_-_jumpstart.jpg' }),
+        _react2.default.createElement('img', { className: 'photo', src: 'https://res.cloudinary.com/ac31624/image/upload/e_brightness:48/v1507180795/blog/1_-_jumpstart.jpg' }),
         _react2.default.createElement(
           'div',
           { className: 'caption' },

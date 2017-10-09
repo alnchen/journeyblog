@@ -10,7 +10,7 @@ class Media extends React.Component {
       return (
         <div className="media">
           <div className='media-title'></div>
-          <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180795/blog/1_-_jumpstart.jpg' />
+          <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/e_brightness:48/v1507180795/blog/1_-_jumpstart.jpg' />
           <div className='caption'>Jumpstart Day 1</div>
 
           <img className='photo' src='https://res.cloudinary.com/ac31624/image/upload/v1507180798/blog/2_-_views.jpg' />
